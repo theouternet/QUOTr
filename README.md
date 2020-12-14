@@ -1,3 +1,3 @@
 # QUOTr
 
-This source code is the sole property of AstonishSoft, and may not be used without permission.
+This source code is the sole property of AstonishSoft--please contact me directly for permission.

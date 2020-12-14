@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>Company Detail Page</title>
     <style>
-
       .red {
         color: red;
       }
@@ -21,26 +19,56 @@
       }
 
       .flexible {
-  display: flex;
-  flex-direction: column;
-}
+        display: flex;
+        flex-direction: column;
+      }
 
+      span + span {
+          margin-top: 7.5px;
+      }
+
+      span + a {
+          margin-top: 7.5px;
+      }
+      
+      form + span {
+          margin-top: 23px;
+      }
+      
+      #submit {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 20px;
+      }
+
+      img {
+        background-color: #302244;
+        border: 5px solid transparent;
+        border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+        border-image-slice: 1;
+        height: 200px;
+        margin: 20px auto;
+        width: 200px;
+      }
 
     </style>
   </head>
 
   <body>
-
+   
     <div class="flexible">
-
       <h1 class="intro">Welcome to QUOTr</h1>
       <p class="intro"><i>Please Enter A Stock Symbol To Begin:</i></p>
-
       <form onsubmit="getInfo();return false;">
           <input type="text" id="symbol"><br>
-          <input type="submit">
+          <input type="submit" id="submit" value="Search">
       </form>
-
           <span id="logo"></span>
           <span id="symbol"></span>
           <span id="company-name"></span>
@@ -49,7 +77,6 @@
           <span id="changes"></span>
           <span id="changes-percentage"></span>
           <a id="website"></a>
-
     </div>
 
     <script src="js/index.js"></script>

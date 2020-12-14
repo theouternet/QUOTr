@@ -22,7 +22,7 @@ function displayInfo() {
     document.getElementById('price').innerHTML = "<strong>Price: </strong>" + "$" + price;
     document.getElementById('changes').innerHTML = "<strong>Change: </strong>" + "$" + changes;
     document.getElementById('changes-percentage').innerHTML = "<strong>% Change: </strong>" + changesPercentage;
-    document.getElementById('website').innerHTML = "<a href='"+website+"'>" + website + "</a>";
+    document.getElementById('website').innerHTML = "<strong>Website: </strong> <a href='"+website+"'>" + website + "</a>";
   
     if (changes < 0) {
       isNegative = true
