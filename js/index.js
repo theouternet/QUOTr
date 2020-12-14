@@ -21,11 +21,11 @@ function displayInfo() {
   
     document.getElementById("logo").appendChild(elem);
     
-    document.getElementById('company-name').innerHTML = companyName;
-    document.getElementById('industry').innerHTML = industry;
-    document.getElementById('price').innerHTML = "$" + price;
-    document.getElementById('changes').innerHTML = "$" + changes;
-    document.getElementById('changes-percentage').innerHTML = changesPercentage;
+    document.getElementById('company-name').innerHTML = "<strong>Company: </strong>" + companyName;
+    document.getElementById('industry').innerHTML = "<strong>Industry: </strong>" + industry;
+    document.getElementById('price').innerHTML = "<strong>Price: </strong>" + "$" + price;
+    document.getElementById('changes').innerHTML = "<strong>Change: </strong>" + "$" + changes;
+    document.getElementById('changes-percentage').innerHTML = "<strong>% Change: </strong>" + changesPercentage;
     document.getElementById('website').innerHTML = "<a href='"+website+"'>" + website + "</a>";
   
     if (changes < 0) {
