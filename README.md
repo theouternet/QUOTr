@@ -2,6 +2,8 @@
 
 # Instructions
 
+To run, simply open the index.html file in your preferred browser.
+
 Enter the stock symbol of the company you'd like to view in the search field and click "Search".
 
 Company information is displayed, including change data that is rendered green or red for positive or negative, respectively.
