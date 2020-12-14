@@ -1,8 +1,6 @@
 function displayInfo() {
     const info = JSON.parse(this.responseText);
-  
-    let symbol = info.symbol
-  
+    
     let image = info.profile.image
   
     let elem = document.createElement("img");
@@ -15,10 +13,8 @@ function displayInfo() {
     let changesPercentage = info.profile.changesPercentage
     let isNegative = null
     let website = info.profile.website
-  
-  
-    document.getElementById('symbol').innerHTML = symbol;
-  
+
+    document.getElementById("logo").innerHTML = "";
     document.getElementById("logo").appendChild(elem);
     
     document.getElementById('company-name').innerHTML = "<strong>Company: </strong>" + companyName;

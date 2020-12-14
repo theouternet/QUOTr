@@ -13,26 +13,42 @@
         color: green;
       }
 
+      body {
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      .flexible {
+  display: flex;
+  flex-direction: column;
+}
+
+
     </style>
   </head>
 
   <body>
 
-    <form onsubmit="getInfo();return false;">
-        <input type="text" id="symbol"><br>
-        <input type="submit">
-    </form>
+    <div class="flexible">
 
-    <div>
+      <h1 class="intro">Welcome to QUOTr</h1>
+      <p class="intro"><i>Please Enter A Stock Symbol To Begin:</i></p>
 
-        <div id="logo"></div>
-        <div id="symbol"></div>
-        <div id="company-name"></div>
-        <div id="industry"></div>
-        <div id="price"></div>
-        <div id="changes"></div>
-        <div id="changes-percentage"></div>
-        <a id="website"></a>
+      <form onsubmit="getInfo();return false;">
+          <input type="text" id="symbol"><br>
+          <input type="submit">
+      </form>
+
+          <span id="logo"></span>
+          <span id="symbol"></span>
+          <span id="company-name"></span>
+          <span id="industry"></span>
+          <span id="price"></span>
+          <span id="changes"></span>
+          <span id="changes-percentage"></span>
+          <a id="website"></a>
 
     </div>
 
