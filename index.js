@@ -1,6 +1,29 @@
 function displayInfo() {
     const info = JSON.parse(this.responseText);
-    
+
+    let symbol = info.symbol
+
+    let image = info.profile.image
+    let elem = document.createElement("img");
+    elem.src = image;
+    let companyName = info.profile.companyName
+    let industry = info.profile.industry
+    let price = info.profile.price
+    let changes = parseFloat(info.profile.changes)
+    let changesPercentage = info.profile.changesPercentage
+    let isNegative = null
+    let website = info.profile.website
+
+    document.getElementById('symbol').innerHTML = symbol;
+
+    document.getElementById("logo").appendChild(elem);
+    document.getElementById('company-name').innerHTML = companyName;
+    document.getElementById('industry').innerHTML = industry;
+    document.getElementById('price').innerHTML = "$" + price;
+    document.getElementById('changes').innerHTML = "$" + changes;
+    document.getElementById('changes-percentage').innerHTML = changesPercentage;
+    document.getElementById('website').innerHTML = "<a href='"+website+"'>" + website + "</a>";
+
 }
 
 function getInfo() {
